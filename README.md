@@ -66,7 +66,7 @@
     <a href="#tailwind-vs-other-frameworks">TAILWIND VS OTHER FRAMEWORKS</a> |
     <a href="#best-practices">BEST PRACTICES</a> |
     <a href="#references-and-tools">REFERENCES AND TOOLS</a> |
-    <a href="#final-thoughts">FINAL CONSIDERATIONS</a>
+    <a href="#final-considerations">FINAL CONSIDERATIONS</a>
   </p>
 </nav>
 
