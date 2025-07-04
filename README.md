@@ -72,7 +72,17 @@
 
 ## ABOUT THIS GUIDE  
 
+<p>
+  This guide was created to serve as a simplified and practical reference for learning and using <strong>Tailwind CSS</strong>. It was inspired by the <a href="https://tailwindcss.com/" target="_blank">official Tailwind documentation</a>, with the goal of offering an easy-to-navigate resource that facilitates both study and quick consultation.
+</p>
 
+<p>
+  Tailwind CSS is a utility-first CSS framework that allows developers to build modern, responsive interfaces directly in their HTML. This guide covers essential concepts, common utilities, component examples, responsive techniques, and customization options.
+</p>
+
+<p>
+  Whether you are a beginner learning utility classes or an experienced developer seeking fast prototyping, this guide is structured to help you work more efficiently and effectively with Tailwind CSS.
+</p>
 
 ## WHAT IS TAILWIND CSS?  
 
