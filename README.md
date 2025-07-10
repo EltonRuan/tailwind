@@ -273,7 +273,63 @@ module.exports = {
 
 ## DARK MODE  
 
+<p>
+  Tailwind CSS supports <strong>dark mode</strong> out of the box. You can control how your design adapts to dark environments using either the <code>media</code> (user's system setting) or <code>class</code> (manual toggle) strategy.
+</p>
 
+<h3>Enabling Dark Mode</h3>
+
+<p>
+  In your <code>tailwind.config.js</code> file, choose the strategy you want to use:
+</p>
+
+<pre><code>// tailwind.config.js
+module.exports = {
+  darkMode: 'class', // or 'media'
+  // ...
+}
+</code></pre>
+
+<h4>Option 1: <code>media</code></h4>
+<p>
+  Automatically switches to dark mode based on the user's operating system preference.
+</p>
+
+<pre><code>&lt;div class="bg-white dark:bg-black text-black dark:text-white"&gt;
+  This adapts to system settings.
+&lt;/div&gt;
+</code></pre>
+
+<h4>Option 2: <code>class</code></h4>
+<p>
+  Gives you manual control over dark mode using a class (typically on the <code>&lt;html&gt;</code> or <code>&lt;body&gt;</code> element).
+</p>
+
+<pre><code>&lt;html class="dark"&gt;
+  &lt;body&gt;
+    &lt;div class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100"&gt;
+      Manual dark mode toggle.
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3>Toggling with JavaScript</h3>
+
+<p>
+  You can toggle the <code>dark</code> class dynamically with a simple JavaScript snippet:
+</p>
+
+<pre><code>document.documentElement.classList.toggle('dark');</code></pre>
+
+<h3>Tip</h3>
+<p>
+  Combine dark mode with Tailwind’s utility classes for seamless support in your UI without duplicating CSS.
+</p>
+
+<p>
+  Dark mode is especially useful for improving user experience in low-light environments and for matching modern UI trends.
+</p>
 
 ## RESPONSIVENESS AND BREAKPOINTS  
 
