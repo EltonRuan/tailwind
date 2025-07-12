@@ -393,7 +393,60 @@ module.exports = {
 
 ## CUSTOM BREAKPOINTS  
 
+<p>
+  Tailwind CSS offers a set of default responsive breakpoints, but you can fully customize them to fit the needs of your project. Whether you need extra-small screen support or want to match specific device dimensions, defining your own breakpoints is simple and flexible.
+</p>
 
+<h3>🛠 Defining Custom Breakpoints</h3>
+
+<p>
+  To define your own breakpoints, open the <code>tailwind.config.js</code> file and modify the <code>screens</code> section inside the <code>theme</code> property:
+</p>
+
+<pre><code>module.exports = {
+  theme: {
+    screens: {
+      xs: '480px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+      '3xl': '1920px', // custom breakpoint
+    },
+  },
+}</code></pre>
+
+<h3>Tips</h3>
+<ul>
+  <li>Custom breakpoints can use <strong>min-width</strong> values (default behavior) or <strong>raw media queries</strong>.</li>
+  <li>You can define <strong>max-width</strong> breakpoints too by using <code>{ max: 'value' }</code> syntax.</li>
+  <li>Breakpoints can be named anything, but it's best to keep them meaningful and consistent.</li>
+</ul>
+
+<h4>Example with raw media query</h4>
+
+<pre><code>module.exports = {
+  theme: {
+    screens: {
+      'tablet': {'raw': '(min-width: 768px) and (max-width: 1024px)'},
+      'retina': {'raw': 'only screen and (-webkit-min-device-pixel-ratio: 2)'},
+    },
+  },
+}</code></pre>
+
+<h3>Usage</h3>
+
+<p>Once defined, use your custom breakpoints just like the default ones:</p>
+
+<pre><code>&lt;div class="text-base 3xl:text-2xl"&gt;
+  This text is larger on ultra-wide screens.
+&lt;/div&gt;
+</code></pre>
+
+<p>
+  Custom breakpoints empower you to design truly responsive layouts that reflect the unique needs of your users and devices.
+</p>
 
 ## VARIANTS AND MODIFIERS  
 
