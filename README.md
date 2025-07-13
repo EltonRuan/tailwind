@@ -450,7 +450,73 @@ module.exports = {
 
 ## VARIANTS AND MODIFIERS  
 
+<p>
+  Tailwind CSS provides a powerful and expressive way to handle styles based on different states or conditions using <strong>variants</strong> and <strong>modifiers</strong>. These allow you to apply utility classes dynamically based on things like screen size, hover state, focus, dark mode, and more.
+</p>
 
+<h3>Common Variants</h3>
+
+<ul>
+  <li><code>hover:</code> — Applies the utility on hover</li>
+  <li><code>focus:</code> — Applies the utility when an element is focused</li>
+  <li><code>active:</code> — Applies the utility when an element is active (clicked)</li>
+  <li><code>disabled:</code> — Applies styles to disabled elements</li>
+  <li><code>dark:</code> — Applies styles in dark mode</li>
+  <li><code>group-hover:</code> — Targets elements within a group on hover</li>
+  <li><code>first:</code>, <code>last:</code>, <code>odd:</code>, <code>even:</code> — For styling based on child position</li>
+  <li><code>sm:</code>, <code>md:</code>, <code>lg:</code>, etc. — For responsive styles</li>
+</ul>
+
+<h3>Syntax</h3>
+
+<p>
+  The syntax is simple: prefix the utility class with the variant, followed by a colon:
+</p>
+
+<pre><code>&lt;button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"&gt;
+  Hover Me
+&lt;/button&gt;
+</code></pre>
+
+<h3>Dark Mode Example</h3>
+
+<pre><code>&lt;div class="bg-white dark:bg-gray-900 text-black dark:text-white"&gt;
+  Light and Dark Mode Friendly
+&lt;/div&gt;
+</code></pre>
+
+<h3>Group and Peer Variants</h3>
+
+<p>
+  Tailwind allows for scoped variants using <code>group</code> and <code>peer</code>:
+</p>
+
+<pre><code>&lt;div class="group"&gt;
+  &lt;button class="group-hover:bg-green-500"&gt;Hover me&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;input type="checkbox" class="peer hidden"&gt;
+&lt;label class="peer-checked:text-green-600"&gt;Checked!&lt;/label&gt;
+</code></pre>
+
+<h3>Customizing Variants</h3>
+
+<p>
+  You can configure which variants are available for each utility in <code>tailwind.config.js</code>:
+</p>
+
+<pre><code>module.exports = {
+  variants: {
+    extend: {
+      backgroundColor: ['active'],
+      textColor: ['visited'],
+    },
+  },
+}</code></pre>
+
+<p>
+  Variants and modifiers help make your Tailwind classes context-aware, dynamic, and much more expressive — all without leaving your HTML!
+</p>
 
 ## JIT CONCEPT  
 
