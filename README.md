@@ -520,7 +520,67 @@ module.exports = {
 
 ## JIT CONCEPT  
 
+<p>
+  The <strong>Just-In-Time (JIT) compiler</strong> is a powerful feature in Tailwind CSS that generates your styles on demand, as you author your HTML or components. Introduced as a core feature starting in Tailwind v3, JIT completely replaces the need to scan and purge unused classes.
+</p>
 
+<h3>How It Works</h3>
+
+<p>
+  Unlike the traditional "precompiled" method where all utility classes are generated ahead of time, JIT only creates the classes you actually use in your code, and it does so instantly. This results in:
+</p>
+
+<ul>
+  <li>Faster build times</li>
+  <li>Smaller CSS files</li>
+  <li>Ability to use arbitrary values like <code>bg-[#1a1a1a]</code>, <code>mt-[7px]</code></li>
+  <li>Full access to all color shades and utilities without manually enabling them</li>
+</ul>
+
+<h3>Enabling JIT (for older Tailwind versions)</h3>
+
+<p>
+  If you're using Tailwind CSS v2.1–v2.2, you had to explicitly enable JIT mode:
+</p>
+
+<pre><code>// tailwind.config.js
+module.exports = {
+  mode: 'jit',
+  purge: ['./index.html', './src/*/.{js,ts,jsx,tsx}'],
+  // ... rest of the config
+}
+</code></pre>
+
+<p>
+  Since Tailwind v3+, JIT is enabled <strong>by default</strong>, and there's no need to set <code>mode: 'jit'</code>.
+</p>
+
+<h3>Benefits of JIT</h3>
+
+<ul>
+  <li><strong>Arbitrary values</strong>: Use any value you want, even if it's not in the theme.</li>
+  <li><strong>Faster feedback loop</strong>: Changes show up instantly while you type.</li>
+  <li><strong>Cleaner code</strong>: You don’t need to extend the config file just to add a missing utility.</li>
+  <li><strong>No purge step</strong>: Your final CSS is always as small as possible.</li>
+</ul>
+
+<h3>Example (JIT in action)</h3>
+
+<pre><code>&lt;div class="bg-[#1a1a1a] text-white p-[18px] rounded-[12px]"&gt;
+  JIT-generated styling with arbitrary values!
+&lt;/div&gt;
+</code></pre>
+
+<h3>Good to Know</h3>
+<ul>
+  <li>Arbitrary values follow this syntax: <code>property-[value]</code></li>
+  <li>You can still use responsive modifiers, pseudo-classes, and dark mode with JIT</li>
+  <li>JIT automatically includes any class used in your files, even dynamically constructed ones</li>
+</ul>
+
+<p>
+  The JIT compiler transforms the developer experience in Tailwind CSS — faster, smarter, and more flexible. It’s a must-have for modern and efficient frontend workflows.
+</p>
 
 ## TAILWIND PLUGINS  
 
