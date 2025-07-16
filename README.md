@@ -668,7 +668,85 @@ module.exports = {
 
 ## CONTAINER AND LAYOUT  
 
+<p>
+  Tailwind CSS offers utility-first classes to help structure your layout effectively. From setting maximum widths using <code>container</code> to creating flexible, responsive page structures, Tailwind makes layout management intuitive and consistent.
+</p>
 
+<h3>The <code>container</code> Class</h3>
+
+<p>
+  The <code>container</code> utility sets a max-width at each responsive breakpoint. It helps center your content and provides padding around it.
+</p>
+
+<pre><code class="language-html">&lt;div class="container mx-auto"&gt;
+  &lt;p&gt;This content is centered and responsive.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+<ul>
+  <li><code>mx-auto</code> centers the container horizontally.</li>
+  <li><code>container</code> automatically applies width based on breakpoints (sm, md, lg, xl, 2xl).</li>
+</ul>
+
+<h4>Customizing Container Padding</h4>
+
+<p>
+  You can customize the padding inside your container using <code>theme.container.padding</code> in your <code>tailwind.config.js</code>.
+</p>
+
+<pre><code>// tailwind.config.js
+module.exports = {
+  theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+      },
+    },
+  },
+}
+</code></pre>
+
+<h3>Layout Utilities</h3>
+
+<p>Tailwind provides essential layout classes for building grid-based or flex-based structures:</p>
+
+<ul>
+  <li><strong><code>flex</code></strong> — Enables Flexbox layout.</li>
+  <li><strong><code>grid</code></strong> — Enables CSS Grid layout.</li>
+  <li><strong><code>block</code></strong>, <code>inline-block</code>, <code>inline</code> — Controls display behavior.</li>
+  <li><strong><code>space-x</code></strong>, <code>space-y</code> — Adds spacing between flex/grid children.</li>
+  <li><strong><code>gap</code></strong> — Sets spacing between grid rows and columns.</li>
+</ul>
+
+<pre><code class="language-html">&lt;div class="grid grid-cols-2 gap-4"&gt;
+  &lt;div class="bg-blue-200"&gt;Column 1&lt;/div&gt;
+  &lt;div class="bg-blue-300"&gt;Column 2&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Positioning and Flow</h3>
+
+<ul>
+  <li><strong><code>relative</code>, <code>absolute</code>, <code>fixed</code>, <code>sticky</code></strong> — Control element positioning.</li>
+  <li><strong><code>inset-0</code>, <code>top-0</code>, <code>left-0</code>, etc.</strong> — Control offsets.</li>
+  <li><strong><code>z-10</code>, <code>z-50</code></strong> — Layering using z-index.</li>
+</ul>
+
+<h3>Summary</h3>
+
+<ul>
+  <li><code>container</code> is useful for centered, responsive content blocks.</li>
+  <li>Layout utilities like <code>grid</code> and <code>flex</code> make it easy to structure your page.</li>
+  <li>Spacing, alignment, and positioning are all controlled through simple, readable classes.</li>
+</ul>
+
+<p>
+  Understanding how to use Tailwind's layout utilities effectively is key to building responsive and maintainable designs quickly.
+</p>
 
 ## GRID SYSTEM  
 
