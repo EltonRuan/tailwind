@@ -750,7 +750,98 @@ module.exports = {
 
 ## GRID SYSTEM  
 
+<p>
+  Tailwind CSS provides a powerful and flexible grid system based on CSS Grid. You can quickly create responsive layouts using utility classes without writing custom CSS.
+</p>
 
+<h3>Basic Grid Layout</h3>
+
+<p>
+  Use <code>grid</code> along with <code>grid-cols-{n}</code> to define how many columns a container should have.
+</p>
+
+<pre><code class="language-html">&lt;div class="grid grid-cols-3 gap-4"&gt;
+  &lt;div class="bg-gray-200 p-4"&gt;1&lt;/div&gt;
+  &lt;div class="bg-gray-300 p-4"&gt;2&lt;/div&gt;
+  &lt;div class="bg-gray-400 p-4"&gt;3&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<ul>
+  <li><code>grid</code>: Turns the element into a grid container.</li>
+  <li><code>grid-cols-3</code>: Creates 3 equal-width columns.</li>
+  <li><code>gap-4</code>: Adds spacing between grid items.</li>
+</ul>
+
+<h3>Responsive Grids</h3>
+
+<p>
+  Tailwind allows you to define different grid structures for each screen size.
+</p>
+
+<pre><code class="language-html">&lt;div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"&gt;
+  &lt;div class="bg-blue-100 p-4"&gt;Item 1&lt;/div&gt;
+  &lt;div class="bg-blue-200 p-4"&gt;Item 2&lt;/div&gt;
+  &lt;div class="bg-blue-300 p-4"&gt;Item 3&lt;/div&gt;
+  &lt;div class="bg-blue-400 p-4"&gt;Item 4&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<ul>
+  <li><code>sm:</code> applies from small screens and up.</li>
+  <li><code>md:</code> applies from medium screens and up.</li>
+  <li><code>lg:</code> applies from large screens and up.</li>
+</ul>
+
+<h3>Column Spanning</h3>
+
+<p>
+  Use <code>col-span-{n}</code> to make a grid item span multiple columns.
+</p>
+
+<pre><code class="language-html">&lt;div class="grid grid-cols-4 gap-4"&gt;
+  &lt;div class="col-span-2 bg-green-200 p-4"&gt;Span 2&lt;/div&gt;
+  &lt;div class="col-span-1 bg-green-300 p-4"&gt;Span 1&lt;/div&gt;
+  &lt;div class="col-span-1 bg-green-400 p-4"&gt;Span 1&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Auto-fit & Auto-fill</h3>
+
+<p>
+  For more dynamic grids, use <code>grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))]</code> via arbitrary values.
+</p>
+
+<pre><code class="language-html">&lt;div class="grid [grid-template-columns:repeat(auto-fit,_minmax(200px,_1fr))] gap-4"&gt;
+  &lt;div class="bg-purple-200 p-4"&gt;Auto 1&lt;/div&gt;
+  &lt;div class="bg-purple-300 p-4"&gt;Auto 2&lt;/div&gt;
+  &lt;div class="bg-purple-400 p-4"&gt;Auto 3&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Grid Alignment</h3>
+
+<p>
+  Align grid items with <code>items-</code> and <code>justify-</code> utilities.
+</p>
+
+<ul>
+  <li><code>items-start</code>, <code>items-center</code>, <code>items-end</code></li>
+  <li><code>justify-start</code>, <code>justify-center</code>, <code>justify-between</code>, etc.</li>
+</ul>
+
+<h3>Summary</h3>
+
+<ul>
+  <li>Use <code>grid</code> and <code>grid-cols-{n}</code> to define column structure.</li>
+  <li>Make your grid responsive with screen prefixes.</li>
+  <li>Use <code>col-span</code> for custom widths and <code>gap</code> for spacing.</li>
+  <li>Use <code>auto-fit</code> and <code>auto-fill</code> for dynamic grids.</li>
+</ul>
+
+<p>
+  Tailwind’s grid system is fully powered by CSS Grid, offering complete flexibility and control to build modern responsive layouts with minimal code.
+</p>
 
 ## FLEXBOX IN TAILWIND  
 
