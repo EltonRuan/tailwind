@@ -845,7 +845,116 @@ module.exports = {
 
 ## FLEXBOX IN TAILWIND  
 
+<p>
+  Tailwind CSS makes working with Flexbox simple and intuitive by providing utility classes for every major Flexbox property. It allows you to build flexible, responsive layouts with minimal effort.
+</p>
 
+<h3>Display Flex</h3>
+
+<p>
+  Use <code>flex</code> to turn any element into a flex container.
+</p>
+
+<pre><code class="language-html">&lt;div class="flex"&gt;
+  &lt;div class="p-4 bg-red-200"&gt;Item 1&lt;/div&gt;
+  &lt;div class="p-4 bg-red-300"&gt;Item 2&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Direction</h3>
+
+<ul>
+  <li><code>flex-row</code>: Horizontal (default)</li>
+  <li><code>flex-row-reverse</code>: Reversed horizontal</li>
+  <li><code>flex-col</code>: Vertical stacking</li>
+  <li><code>flex-col-reverse</code>: Reversed vertical</li>
+</ul>
+
+<pre><code class="language-html">&lt;div class="flex flex-col"&gt;
+  &lt;div class="bg-green-200 p-2"&gt;Top&lt;/div&gt;
+  &lt;div class="bg-green-300 p-2"&gt;Bottom&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Wrapping</h3>
+
+<ul>
+  <li><code>flex-wrap</code>: Allows items to wrap to the next line</li>
+  <li><code>flex-nowrap</code>: Prevents wrapping (default)</li>
+  <li><code>flex-wrap-reverse</code>: Wraps in reverse</li>
+</ul>
+
+<pre><code class="language-html">&lt;div class="flex flex-wrap gap-2"&gt;
+  &lt;div class="w-40 h-20 bg-blue-200"&gt;Box 1&lt;/div&gt;
+  &lt;div class="w-40 h-20 bg-blue-300"&gt;Box 2&lt;/div&gt;
+  &lt;div class="w-40 h-20 bg-blue-400"&gt;Box 3&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Justify Content</h3>
+
+<ul>
+  <li><code>justify-start</code></li>
+  <li><code>justify-center</code></li>
+  <li><code>justify-end</code></li>
+  <li><code>justify-between</code></li>
+  <li><code>justify-around</code></li>
+  <li><code>justify-evenly</code></li>
+</ul>
+
+<pre><code class="language-html">&lt;div class="flex justify-between"&gt;
+  &lt;div class="bg-yellow-200 p-2"&gt;Left&lt;/div&gt;
+  &lt;div class="bg-yellow-300 p-2"&gt;Right&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Align Items</h3>
+
+<ul>
+  <li><code>items-start</code></li>
+  <li><code>items-center</code></li>
+  <li><code>items-end</code></li>
+  <li><code>items-stretch</code> (default)</li>
+  <li><code>items-baseline</code></li>
+</ul>
+
+<h3>Align Self</h3>
+
+<ul>
+  <li><code>self-auto</code> (default)</li>
+  <li><code>self-start</code></li>
+  <li><code>self-center</code></li>
+  <li><code>self-end</code></li>
+  <li><code>self-stretch</code></li>
+</ul>
+
+<h3>Flex Grow / Shrink / Basis</h3>
+
+<ul>
+  <li><code>flex-1</code>: Grow to fill space</li>
+  <li><code>flex-auto</code>: Auto grow/shrink</li>
+  <li><code>flex-initial</code>: No grow, only shrink if needed</li>
+  <li><code>flex-none</code>: No grow or shrink</li>
+</ul>
+
+<pre><code class="language-html">&lt;div class="flex"&gt;
+  &lt;div class="flex-1 bg-pink-200 p-2"&gt;Flexible&lt;/div&gt;
+  &lt;div class="flex-none w-24 bg-pink-300 p-2"&gt;Fixed&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Summary</h3>
+
+<ul>
+  <li>Use <code>flex</code> to enable Flexbox layout.</li>
+  <li>Control direction with <code>flex-row</code> or <code>flex-col</code>.</li>
+  <li>Use <code>justify-</code> and <code>items-</code> to control alignment.</li>
+  <li>Combine with responsive prefixes (<code>md:flex-col</code>, etc.) for adaptive layouts.</li>
+</ul>
+
+<p>
+  Flexbox utilities in Tailwind allow for rapid creation of adaptive, organized, and visually consistent layouts. It's ideal for navigation bars, cards, toolbars, and more.
+</p>
 
 ## SPACING (PADDING AND MARGIN)  
 
