@@ -958,7 +958,66 @@ module.exports = {
 
 ## SPACING (PADDING AND MARGIN)  
 
+<p>
+  Tailwind CSS provides utility classes to easily manage spacing within and around elements using padding (<code>p</code>) and margin (<code>m</code>). These classes help control layout and element positioning without writing custom CSS.
+</p>
 
+<h3>Padding</h3>
+<p>Use <code>p</code> (all sides), <code>px</code>/<code>py</code> (horizontal/vertical), or <code>pt</code>/<code>pr</code>/<code>pb</code>/<code>pl</code> (top/right/bottom/left) to control padding.</p>
+
+<pre><code class="language-html">&lt;div class="p-4 bg-blue-200"&gt;Padding all sides 1rem&lt;/div&gt;
+&lt;div class="pt-8 pb-4 px-2 bg-blue-300"&gt;Padding top/bottom/horizontal&lt;/div&gt;
+</code></pre>
+
+<h3>Margin</h3>
+<p>Use <code>m</code>, <code>mx</code>, <code>my</code>, <code>mt</code>, <code>mr</code>, <code>mb</code>, and <code>ml</code> for margins.</p>
+
+<pre><code class="language-html">&lt;div class="m-4 bg-green-200"&gt;Margin all sides 1rem&lt;/div&gt;
+&lt;div class="mt-2 ml-6 bg-green-300"&gt;Margin top and left&lt;/div&gt;
+</code></pre>
+
+<h3>Spacing Scale</h3>
+<p>Tailwind uses a default spacing scale (in <em>rem</em>):</p>
+
+<ul>
+  <li><code>0</code> → 0rem</li>
+  <li><code>1</code> → 0.25rem (4px)</li>
+  <li><code>2</code> → 0.5rem (8px)</li>
+  <li><code>4</code> → 1rem (16px)</li>
+  <li><code>8</code> → 2rem (32px)</li>
+  <li>... up to <code>96</code></li>
+</ul>
+
+<h3>Negative Margin</h3>
+<p>Prefix with <code>-</code> to apply negative margins (e.g., <code>-mt-2</code>).</p>
+
+<pre><code class="language-html">&lt;div class="-mb-4 bg-red-200"&gt;Negative bottom margin&lt;/div&gt;
+</code></pre>
+
+<h3>Auto Margin</h3>
+<p>Use <code>mx-auto</code> or <code>my-auto</code> to center elements horizontally or vertically when possible.</p>
+
+<pre><code class="language-html">&lt;div class="mx-auto w-1/2 bg-yellow-200"&gt;Centered horizontally&lt;/div&gt;
+</code></pre>
+
+<h3>Responsive Spacing</h3>
+<p>Apply spacing conditionally using breakpoints:</p>
+
+<pre><code class="language-html">&lt;div class="p-2 md:p-8 bg-purple-200"&gt;Small padding on mobile, large on desktop&lt;/div&gt;
+</code></pre>
+
+<h3>Summary</h3>
+
+<ul>
+  <li><code>p</code>, <code>m</code> = padding/margin on all sides</li>
+  <li><code>px</code>, <code>py</code>, <code>pt</code>, <code>mb</code>, etc. for specific directions</li>
+  <li>Responsive and negative spacing are supported</li>
+  <li>Built on a consistent rem-based scale</li>
+</ul>
+
+<p>
+  These spacing utilities make it quick and efficient to adjust layout, separation, and alignment of elements across all devices and screen sizes.
+</p>
 
 ## WIDTH AND HEIGHT  
 
