@@ -1021,7 +1021,73 @@ module.exports = {
 
 ## WIDTH AND HEIGHT  
 
+<p>
+  Tailwind CSS provides utility classes to control the width and height of elements using predefined scales, percentages, screen sizes, or custom values.
+</p>
 
+<h3>Width</h3>
+<p>
+  Use <code>w-{value}</code> to set the width of an element. Tailwind includes utility classes for fixed widths, fractional widths, full width, screen width, and more.
+</p>
+
+<pre><code class="language-html">
+&lt;div class="w-16 bg-blue-200"&gt;Fixed width (4rem)&lt;/div&gt;
+&lt;div class="w-1/2 bg-blue-300"&gt;50% width&lt;/div&gt;
+&lt;div class="w-full bg-blue-400"&gt;100% width&lt;/div&gt;
+&lt;div class="w-screen bg-blue-500"&gt;Full screen width&lt;/div&gt;
+</code></pre>
+
+<h3>Height</h3>
+<p>
+  Use <code>h-{value}</code> to control height in a similar way.
+</p>
+
+<pre><code class="language-html">
+&lt;div class="h-12 bg-green-200"&gt;Fixed height (3rem)&lt;/div&gt;
+&lt;div class="h-1/2 bg-green-300"&gt;50% height of parent&lt;/div&gt;
+&lt;div class="h-full bg-green-400"&gt;100% height of parent&lt;/div&gt;
+&lt;div class="h-screen bg-green-500"&gt;Full screen height&lt;/div&gt;
+</code></pre>
+
+<h3>Min and Max Width/Height</h3>
+<p>
+  Tailwind also supports <code>min-w-*</code>, <code>max-w-*</code>, <code>min-h-*</code>, and <code>max-h-*</code> utilities.
+</p>
+
+<pre><code class="language-html">
+&lt;div class="min-w-[200px] max-w-md bg-yellow-100"&gt;Min 200px, max medium width&lt;/div&gt;
+&lt;div class="min-h-screen bg-yellow-200"&gt;At least full screen height&lt;/div&gt;
+</code></pre>
+
+<h3>⚙Custom Values (Arbitrary)</h3>
+<p>
+  You can use arbitrary values inside square brackets:
+</p>
+
+<pre><code class="language-html">
+&lt;div class="w-[300px] h-[150px] bg-red-200"&gt;Custom size&lt;/div&gt;
+</code></pre>
+
+<h3>📱 Responsive Sizes</h3>
+<p>
+  Apply different sizes at breakpoints:
+</p>
+
+<pre><code class="language-html">
+&lt;div class="w-1/2 md:w-1/4 lg:w-1/6 bg-purple-300"&gt;Responsive width&lt;/div&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li><code>w-*</code> and <code>h-*</code> for fixed, relative, or full dimensions</li>
+  <li><code>min-</code> and <code>max-</code> prefixes for limits</li>
+  <li>Supports screen-based, fractional, and custom sizing</li>
+  <li>Fully responsive using breakpoints</li>
+</ul>
+
+<p>
+  Tailwind’s sizing utilities help ensure consistent layouts and adaptive design for all screen sizes.
+</p>
 
 ## Z-INDEX AND POSITIONING  
 
