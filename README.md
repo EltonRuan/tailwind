@@ -1091,7 +1091,91 @@ module.exports = {
 
 ## Z-INDEX AND POSITIONING  
 
+<p>
+  Tailwind CSS provides utility classes for setting the <strong>z-index</strong> and controlling element <strong>positioning</strong> on the page.
+</p>
 
+<h3>Positioning Utilities</h3>
+<p>
+  Use the following classes to set an element’s position:
+</p>
+
+<ul>
+  <li><code>static</code> – default (no positioning)</li>
+  <li><code>relative</code> – positioned relative to its normal position</li>
+  <li><code>absolute</code> – positioned relative to the nearest positioned ancestor</li>
+  <li><code>fixed</code> – positioned relative to the viewport</li>
+  <li><code>sticky</code> – toggles between relative and fixed depending on scroll</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="relative"&gt;
+  &lt;div class="absolute top-0 left-0 bg-blue-300"&gt;Absolutely positioned&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="fixed bottom-0 right-0 bg-green-300"&gt;Fixed to corner&lt;/div&gt;
+</code></pre>
+
+<h3>Z-Index Utilities</h3>
+<p>
+  Z-index controls the stack order of elements. Tailwind includes the following utilities:
+</p>
+
+<ul>
+  <li><code>z-0</code></li>
+  <li><code>z-10</code></li>
+  <li><code>z-20</code></li>
+  <li><code>z-30</code></li>
+  <li><code>z-40</code></li>
+  <li><code>z-50</code></li>
+  <li><code>z-auto</code> – default stacking</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="relative z-10 bg-red-300"&gt;In front&lt;/div&gt;
+&lt;div class="relative z-0 bg-yellow-300"&gt;Behind&lt;/div&gt;
+</code></pre>
+
+<h3>Offset Utilities (Top, Right, Bottom, Left)</h3>
+<p>
+  Tailwind also provides spacing utilities for precise control of element placement:
+</p>
+
+<pre><code class="language-html">
+&lt;div class="absolute top-4 right-4 bg-purple-300"&gt;Offset using spacing utilities&lt;/div&gt;
+</code></pre>
+
+<h3>Arbitrary Z-Index</h3>
+<p>
+  Use custom z-index values when needed:
+</p>
+
+<pre><code class="language-html">
+&lt;div class="z-[9999] bg-gray-300"&gt;Custom z-index&lt;/div&gt;
+</code></pre>
+
+<h3>Responsive Positioning</h3>
+<p>
+  Combine with responsive modifiers:
+</p>
+
+<pre><code class="language-html">
+&lt;div class="relative md:absolute md:top-0 md:left-0 bg-pink-300"&gt;
+  Position changes on medium screens
+&lt;/div&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li>Use <code>relative</code>, <code>absolute</code>, <code>fixed</code>, <code>sticky</code> to control element flow</li>
+  <li>Apply <code>top</code>, <code>left</code>, <code>right</code>, <code>bottom</code> to set offsets</li>
+  <li>Use <code>z-*</code> for stacking context and custom order</li>
+  <li>Fully responsive and supports arbitrary values</li>
+</ul>
+
+<p>
+  These utilities are essential for building layered interfaces like modals, tooltips, or sticky headers.
+</p>
 
 ## VISIBILITY AND DISPLAY  
 
