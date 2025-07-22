@@ -1179,7 +1179,74 @@ module.exports = {
 
 ## VISIBILITY AND DISPLAY  
 
+<p>
+  Tailwind CSS provides utility classes to control the <strong>visibility</strong> and <strong>display</strong> of elements efficiently, making layout adjustments fast and responsive.
+</p>
 
+<h3>Display Utilities</h3>
+<p>
+  Use the <code>display</code> utilities to define how an element behaves in the layout:
+</p>
+
+<ul>
+  <li><code>block</code></li>
+  <li><code>inline-block</code></li>
+  <li><code>inline</code></li>
+  <li><code>flex</code></li>
+  <li><code>inline-flex</code></li>
+  <li><code>grid</code></li>
+  <li><code>inline-grid</code></li>
+  <li><code>hidden</code> – removes element from the layout</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="block"&gt;Block Element&lt;/div&gt;
+&lt;div class="inline"&gt;Inline Element&lt;/div&gt;
+&lt;div class="hidden md:block"&gt;Hidden on small, visible on medium+&lt;/div&gt;
+</code></pre>
+
+<h3>Visibility Utilities</h3>
+<p>
+  These classes control whether an element is visible or hidden but still occupies space:
+</p>
+
+<ul>
+  <li><code>visible</code></li>
+  <li><code>invisible</code></li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="visible"&gt;I am visible&lt;/div&gt;
+&lt;div class="invisible"&gt;I am hidden but still take space&lt;/div&gt;
+</code></pre>
+
+<h3>Responsive Utilities</h3>
+<p>
+  Combine with responsive prefixes to show or hide elements on different screen sizes:
+</p>
+
+<pre><code class="language-html">
+&lt;div class="hidden sm:block"&gt;
+  Only visible on small screens and up
+&lt;/div&gt;
+</code></pre>
+
+<h3>Difference: <code>hidden</code> vs <code>invisible</code></h3>
+<ul>
+  <li><code>hidden</code>: removes the element from the document flow (like <code>display: none</code>)</li>
+  <li><code>invisible</code>: hides the element but maintains its layout (like <code>visibility: hidden</code>)</li>
+</ul>
+
+<h3>Summary</h3>
+<ul>
+  <li><strong>Display:</strong> Use <code>block</code>, <code>flex</code>, <code>grid</code>, etc., to change element layout</li>
+  <li><strong>Visibility:</strong> Use <code>visible</code> or <code>invisible</code> to toggle element presence without removing layout space</li>
+  <li><strong>Responsive:</strong> Combine with screen breakpoints for adaptive UIs</li>
+</ul>
+
+<p>
+  These utilities are essential for dynamic layouts, responsive navigation menus, and controlling UI behavior across different devices.
+</p>
 
 ## TYPOGRAPHY  
 
