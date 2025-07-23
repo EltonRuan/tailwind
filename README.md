@@ -1250,7 +1250,100 @@ module.exports = {
 
 ## TYPOGRAPHY  
 
+<p>
+  Tailwind CSS offers a comprehensive set of utility classes to style text quickly and consistently, including font size, weight, alignment, spacing, and more.
+</p>
 
+<h3>Font Size</h3>
+<p>Control text size using classes like:</p>
+<ul>
+  <li><code>text-xs</code>, <code>text-sm</code>, <code>text-base</code>, <code>text-lg</code>, <code>text-xl</code></li>
+  <li><code>text-2xl</code>, <code>text-3xl</code>, up to <code>text-9xl</code></li>
+</ul>
+
+<pre><code class="language-html">
+&lt;p class="text-lg"&gt;This is large text&lt;/p&gt;
+&lt;p class="text-3xl font-bold"&gt;Big and bold!&lt;/p&gt;
+</code></pre>
+
+<h3>Font Family</h3>
+<p>Choose between predefined font families:</p>
+<ul>
+  <li><code>font-sans</code> – default sans-serif</li>
+  <li><code>font-serif</code> – serif</li>
+  <li><code>font-mono</code> – monospace</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;p class="font-serif"&gt;This is serif text&lt;/p&gt;
+</code></pre>
+
+<h3>Font Weight</h3>
+<ul>
+  <li><code>font-thin</code>, <code>font-light</code>, <code>font-normal</code>, <code>font-medium</code></li>
+  <li><code>font-semibold</code>, <code>font-bold</code>, <code>font-black</code></li>
+</ul>
+
+<pre><code class="language-html">
+&lt;p class="font-semibold"&gt;This is semi-bold text&lt;/p&gt;
+</code></pre>
+
+<h3>Text Alignment</h3>
+<ul>
+  <li><code>text-left</code>, <code>text-center</code>, <code>text-right</code>, <code>text-justify</code></li>
+</ul>
+
+<pre><code class="language-html">
+&lt;p class="text-center"&gt;Centered text&lt;/p&gt;
+</code></pre>
+
+<h3>Letter Spacing & Line Height</h3>
+<ul>
+  <li><code>tracking-tighter</code> to <code>tracking-widest</code></li>
+  <li><code>leading-none</code> to <code>leading-loose</code></li>
+</ul>
+
+<pre><code class="language-html">
+&lt;p class="tracking-wider leading-relaxed"&gt;
+  Spaced letters and loose lines
+&lt;/p&gt;
+</code></pre>
+
+<h3>Text Transform</h3>
+<ul>
+  <li><code>uppercase</code>, <code>lowercase</code>, <code>capitalize</code>, <code>normal-case</code></li>
+</ul>
+
+<pre><code class="language-html">
+&lt;p class="uppercase"&gt;uppercase text&lt;/p&gt;
+</code></pre>
+
+<h3>Text Color</h3>
+<p>Use text color utilities like:</p>
+<pre><code class="language-html">
+&lt;p class="text-blue-500"&gt;This text is blue&lt;/p&gt;
+&lt;p class="text-red-700"&gt;Danger!&lt;/p&gt;
+</code></pre>
+
+<h3>Text Decoration</h3>
+<ul>
+  <li><code>underline</code>, <code>line-through</code>, <code>no-underline</code></li>
+</ul>
+
+<pre><code class="language-html">
+&lt;p class="underline text-indigo-600"&gt;Underlined link&lt;/p&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li><strong>Font control:</strong> size, family, weight, and transform</li>
+  <li><strong>Alignment and spacing:</strong> control how text appears in layout</li>
+  <li><strong>Colors and decoration:</strong> for visual styling and emphasis</li>
+</ul>
+
+<p>
+  Typography utilities in Tailwind are essential for building clean, readable, and consistent user interfaces.
+</p>
 
 ## COLORS AND BACKGROUNDS  
 
