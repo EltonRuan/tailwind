@@ -1347,7 +1347,83 @@ module.exports = {
 
 ## COLORS AND BACKGROUNDS  
 
+<p>
+  Tailwind CSS provides a rich color palette and powerful utility classes to style text, borders, and backgrounds. It supports both light and dark themes with intuitive class names.
+</p>
 
+<h3>Text Color</h3>
+<ul>
+  <li>Use <code>text-{color}-{shade}</code> to apply color to text.</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;p class="text-red-500"&gt;Error message&lt;/p&gt;
+&lt;p class="text-green-700"&gt;Success text&lt;/p&gt;
+</code></pre>
+
+<h3>Background Color</h3>
+<ul>
+  <li>Use <code>bg-{color}-{shade}</code> to set background colors.</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="bg-blue-100 p-4"&gt;
+  Light blue background
+&lt;/div&gt;
+</code></pre>
+
+<h3>Dark Mode Support</h3>
+<ul>
+  <li>Use <code>dark:</code> prefix to define styles in dark mode.</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="bg-white dark:bg-gray-800 text-black dark:text-white"&gt;
+  Adapts to dark mode
+&lt;/div&gt;
+</code></pre>
+
+<h3>Border Color</h3>
+<ul>
+  <li>Use <code>border</code> along with <code>border-{color}-{shade}</code>.</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;input class="border border-gray-300 focus:border-blue-500"&gt;
+</code></pre>
+
+<h3>Hover and Focus Colors</h3>
+<ul>
+  <li>Use <code>hover:</code> and <code>focus:</code> prefixes for interactivity.</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;button class="bg-indigo-500 hover:bg-indigo-700 text-white py-2 px-4"&gt;
+  Hover me
+&lt;/button&gt;
+</code></pre>
+
+<h3>Gradients</h3>
+<ul>
+  <li>Apply gradients with <code>bg-gradient-to-{direction}</code> and <code>from-</code>, <code>via-</code>, <code>to-</code> classes.</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white p-6"&gt;
+  Gradient background
+&lt;/div&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li><strong>Text and background colors:</strong> simple, intuitive class structure</li>
+  <li><strong>Dark mode:</strong> responsive classes for light/dark themes</li>
+  <li><strong>Interactive styling:</strong> hover, focus, and gradients support</li>
+</ul>
+
+<p>
+  Tailwind’s color and background utilities allow for fast and responsive UI customization, making it easier to maintain design consistency across your project.
+</p>
 
 ## BORDERS AND RADIUS  
 
