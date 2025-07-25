@@ -1427,7 +1427,65 @@ module.exports = {
 
 ## BORDERS AND RADIUS  
 
+<p>
+  Tailwind CSS offers utility classes for customizing border widths, styles, colors, and corner radii with ease. These utilities help structure elements visually and enhance the UI.
+</p>
 
+<h3>Border Width</h3>
+<ul>
+  <li>Use <code>border</code> to apply a default 1px border.</li>
+  <li>Use <code>border-{side}</code> for individual sides (top, right, bottom, left).</li>
+  <li>Use <code>border-{width}</code> to control the thickness.</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="border"&gt;Default border&lt;/div&gt;
+&lt;div class="border-t-4 border-red-500"&gt;Thicker top border&lt;/div&gt;
+</code></pre>
+
+<h3>Border Color</h3>
+<ul>
+  <li>Use <code>border-{color}-{shade}</code> to change border color.</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="border border-blue-500"&gt;Blue border&lt;/div&gt;
+</code></pre>
+
+<h3>Border Radius (Rounded Corners)</h3>
+<ul>
+  <li>Use <code>rounded</code> for general rounded corners.</li>
+  <li>Use <code>rounded-{size}</code> for control (sm, md, lg, xl, full).</li>
+  <li>Use directional variants like <code>rounded-t-lg</code> or <code>rounded-r-full</code>.</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;button class="bg-green-500 text-white px-4 py-2 rounded"&gt;
+  Rounded button
+&lt;/button&gt;
+
+&lt;div class="rounded-full w-16 h-16 bg-pink-300"&gt;&lt;/div&gt;
+</code></pre>
+
+<h3>Removing Borders</h3>
+<ul>
+  <li>Use <code>border-0</code> to remove borders completely.</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;input class="border border-gray-400 focus:border-blue-500 border-0"&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li><strong>Border control:</strong> width, color, and side-specific utilities</li>
+  <li><strong>Radius:</strong> from slightly rounded to fully circular</li>
+  <li><strong>Clear syntax:</strong> makes styling faster and component-based</li>
+</ul>
+
+<p>
+  Use Tailwind’s border and radius classes to quickly define the look and feel of UI components without writing custom CSS.
+</p>
 
 ## SHADOWS AND OPACITY  
 
