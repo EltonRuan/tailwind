@@ -1489,7 +1489,61 @@ module.exports = {
 
 ## SHADOWS AND OPACITY  
 
+<p>
+  Tailwind CSS provides utility classes to add depth using shadows and control element transparency using opacity classes. These utilities are essential for modern UI effects and emphasis.
+</p>
 
+<h3>Box Shadows</h3>
+<ul>
+  <li>Use <code>shadow</code> for a default subtle shadow.</li>
+  <li>Variants include <code>shadow-sm</code>, <code>shadow-md</code>, <code>shadow-lg</code>, <code>shadow-xl</code>, and <code>shadow-2xl</code>.</li>
+  <li>Use <code>shadow-none</code> to remove shadows.</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="shadow p-4 bg-white rounded"&gt;Basic shadow&lt;/div&gt;
+&lt;div class="shadow-lg p-4 bg-white rounded"&gt;Larger shadow&lt;/div&gt;
+&lt;div class="shadow-none p-4 bg-white rounded"&gt;No shadow&lt;/div&gt;
+</code></pre>
+
+<h3>Shadow Colors (with plugins or custom config)</h3>
+<p>
+  Tailwind doesn't support colored shadows out of the box, but you can extend it with plugins or custom classes in <code>tailwind.config.js</code>.
+</p>
+
+<h3>Opacity</h3>
+<ul>
+  <li>Use <code>opacity-{value}</code> where value ranges from 0 to 100.</li>
+  <li>Common values: <code>opacity-0</code>, <code>opacity-25</code>, <code>opacity-50</code>, <code>opacity-75</code>, <code>opacity-100</code>.</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="opacity-100"&gt;Fully visible&lt;/div&gt;
+&lt;div class="opacity-50"&gt;50% transparent&lt;/div&gt;
+&lt;div class="opacity-0"&gt;Invisible&lt;/div&gt;
+</code></pre>
+
+<h3>Combining with Hover</h3>
+<p>You can use <code>hover:</code> modifiers to apply dynamic shadow or opacity changes on interaction.</p>
+
+<pre><code class="language-html">
+&lt;button class="bg-blue-500 text-white px-4 py-2 shadow hover:shadow-lg transition"&gt;
+  Hover Me
+&lt;/button&gt;
+
+&lt;img class="opacity-70 hover:opacity-100 transition duration-300" src="image.jpg"&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li><strong>Shadows:</strong> Easily apply depth and visual hierarchy</li>
+  <li><strong>Opacity:</strong> Control visibility and emphasis</li>
+  <li><strong>Responsive and interactive:</strong> Combine with modifiers like <code>hover</code> and <code>focus</code></li>
+</ul>
+
+<p>
+  With Tailwind’s shadow and opacity utilities, you can quickly enhance your UI elements without writing custom CSS.
+</p>
 
 ## TRANSITIONS AND ANIMATIONS  
 
