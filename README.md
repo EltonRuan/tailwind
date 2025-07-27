@@ -1547,6 +1547,86 @@ module.exports = {
 
 ## TRANSITIONS AND ANIMATIONS  
 
+<p>
+  Tailwind CSS provides powerful utility classes to apply smooth transitions and basic animations without writing custom CSS. These utilities improve user experience and create modern interactive interfaces.
+</p>
+
+<h3>Transitions</h3>
+<p>Use transition classes to animate changes in properties like <code>opacity</code>, <code>transform</code>, <code>background-color</code>, and more.</p>
+
+<ul>
+  <li><code>transition</code> – enables transitions on all supported properties</li>
+  <li><code>transition-colors</code>, <code>transition-opacity</code>, <code>transition-transform</code>, etc.</li>
+  <li><code>duration-{time}</code> – controls the speed (e.g., <code>duration-300</code>)</li>
+  <li><code>ease-{type}</code> – controls the easing (e.g., <code>ease-in</code>, <code>ease-out</code>)</li>
+  <li><code>delay-{time}</code> – adds delay before animation starts</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;button class="bg-blue-500 text-white px-4 py-2 rounded 
+               transition duration-300 ease-in-out 
+               hover:bg-blue-700"&gt;
+  Hover Me
+&lt;/button&gt;
+</code></pre>
+
+<h3>Animations</h3>
+<p>
+  Tailwind includes a few built-in animation classes, but you can extend or define your own using the <code>tailwind.config.js</code> file.
+</p>
+
+<ul>
+  <li><code>animate-none</code></li>
+  <li><code>animate-spin</code> – spinning effect</li>
+  <li><code>animate-ping</code> – pulsating ring</li>
+  <li><code>animate-pulse</code> – fading in and out</li>
+  <li><code>animate-bounce</code> – bouncing up and down</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="h-10 w-10 bg-blue-500 rounded-full animate-bounce"&gt;&lt;/div&gt;
+
+&lt;span class="inline-flex h-3 w-3 rounded-full bg-green-500 animate-ping"&gt;&lt;/span&gt;
+</code></pre>
+
+<h3>Custom Animations</h3>
+<p>
+  You can define your own keyframes and animation names inside <code>tailwind.config.js</code>.
+</p>
+
+<pre><code class="language-js">
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
+      },
+    },
+  },
+}
+</code></pre>
+
+<pre><code class="language-html">
+&lt;div class="animate-wiggle p-4 bg-yellow-300"&gt;I'm wiggling!&lt;/div&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li><strong>Transitions:</strong> Use <code>transition</code>, <code>duration</code>, <code>ease</code> for smooth UI effects</li>
+  <li><strong>Animations:</strong> Use built-in effects like <code>bounce</code>, <code>pulse</code>, or create custom ones</li>
+  <li><strong>Customization:</strong> Fully extendable via <code>tailwind.config.js</code></li>
+</ul>
+
+<p>
+  Tailwind's transition and animation utilities help you bring life to your UI with minimal effort and maximum control.
+</p>
 
 
 ## TRANSFORMATIONS  
