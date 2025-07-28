@@ -1631,7 +1631,81 @@ module.exports = {
 
 ## TRANSFORMATIONS  
 
-.
+<p>
+  Tailwind CSS offers transformation utilities to modify the appearance and position of elements using <code>transform</code> properties such as <strong>scale</strong>, <strong>rotate</strong>, <strong>translate</strong>, and <strong>skew</strong>. These utilities are useful for creating dynamic and interactive interfaces.
+</p>
+
+<h3>Enabling Transformations</h3>
+<p>
+  Before applying individual transform utilities, you must enable transformations on the element:
+</p>
+
+<pre><code class="language-html">
+&lt;div class="transform ..."&gt;&lt;/div&gt;
+</code></pre>
+
+<h3>Scaling</h3>
+<ul>
+  <li><code>scale-{value}</code> – scale in both directions (e.g., <code>scale-75</code>, <code>scale-100</code>, <code>scale-125</code>)</li>
+  <li><code>scale-x-{value}</code>, <code>scale-y-{value}</code> – scale independently</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="transform scale-125"&gt;Scaled up 125%&lt;/div&gt;
+</code></pre>
+
+<h3>Rotation</h3>
+<ul>
+  <li><code>rotate-{deg}</code> – rotate clockwise (e.g., <code>rotate-45</code>)</li>
+  <li><code>-rotate-{deg}</code> – rotate counterclockwise (e.g., <code>-rotate-45</code>)</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="transform rotate-45"&gt;Rotated 45 degrees&lt;/div&gt;
+</code></pre>
+
+<h3>Translation</h3>
+<ul>
+  <li><code>translate-x-{value}</code> – move element left/right</li>
+  <li><code>translate-y-{value}</code> – move element up/down</li>
+  <li><code>-translate-x-{value}</code>, <code>-translate-y-{value}</code> – move in the opposite direction</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="transform translate-x-4 translate-y-2"&gt;Moved position&lt;/div&gt;
+</code></pre>
+
+<h3>Skew</h3>
+<ul>
+  <li><code>skew-x-{deg}</code> – skew horizontally</li>
+  <li><code>skew-y-{deg}</code> – skew vertically</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="transform skew-x-12"&gt;Skewed element&lt;/div&gt;
+</code></pre>
+
+<h3>Combining Multiple Transforms</h3>
+<p>
+  You can combine multiple transformations on a single element:
+</p>
+
+<pre><code class="language-html">
+&lt;div class="transform scale-110 rotate-6 translate-x-2"&gt;
+  Combined Transformations
+&lt;/div&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li><strong>Enable with:</strong> <code>transform</code></li>
+  <li><strong>Control:</strong> <code>scale</code>, <code>rotate</code>, <code>translate</code>, <code>skew</code></li>
+  <li><strong>Combine effects</strong> for powerful animations and dynamic layout behavior</li>
+</ul>
+
+<p>
+  Tailwind's transformation utilities make it easy to create visually engaging and interactive UI components.
+</p>
 
 ## EFFECTS AND BLEND MODES 
 
