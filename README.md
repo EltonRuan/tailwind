@@ -1709,7 +1709,70 @@ module.exports = {
 
 ## EFFECTS AND BLEND MODES 
 
+<p>
+  Tailwind CSS provides a variety of utilities to apply visual effects such as <strong>blur</strong>, <strong>brightness</strong>, <strong>contrast</strong>, <strong>grayscale</strong>, and <strong>blend modes</strong>. These help you create advanced visual styles with ease.
+</p>
 
+<h3>Blur</h3>
+<ul>
+  <li><code>blur-sm</code>, <code>blur</code>, <code>blur-md</code>, <code>blur-lg</code>, <code>blur-xl</code> – apply increasing levels of blur</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="blur-md"&gt;This element is blurred&lt;/div&gt;
+</code></pre>
+
+<h3>Brightness & Contrast</h3>
+<ul>
+  <li><code>brightness-{value}</code> – adjust brightness (e.g., <code>brightness-50</code>, <code>brightness-100</code>, <code>brightness-150</code>)</li>
+  <li><code>contrast-{value}</code> – adjust contrast similarly</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;img class="brightness-125 contrast-75" src="image.jpg" /&gt;
+</code></pre>
+
+<h3>Grayscale, Sepia, and Invert</h3>
+<ul>
+  <li><code>grayscale</code> – turn the image into black and white</li>
+  <li><code>sepia</code> – apply a sepia (brownish) tone</li>
+  <li><code>invert</code> – invert all colors</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;img class="grayscale" src="image.jpg" /&gt;
+</code></pre>
+
+<h3>Blend Modes</h3>
+<ul>
+  <li><code>mix-blend-{mode}</code> – how an element’s content blends with the background (e.g., <code>mix-blend-multiply</code>, <code>mix-blend-screen</code>)</li>
+  <li><code>bg-blend-{mode}</code> – how background layers blend together (e.g., <code>bg-blend-overlay</code>)</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="mix-blend-multiply bg-blue-500"&gt;Blend with content behind&lt;/div&gt;
+</code></pre>
+
+<h3>Hue Rotate and Saturation</h3>
+<ul>
+  <li><code>hue-rotate-{deg}</code> – shift colors around the hue circle</li>
+  <li><code>saturate-{value}</code> – adjust color saturation</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;img class="hue-rotate-90 saturate-200" src="image.jpg" /&gt;
+</code></pre>
+
+<h3>Summary</h3>
+<ul>
+  <li>Use <strong>blur</strong>, <strong>brightness</strong>, <strong>contrast</strong>, <strong>grayscale</strong>, <strong>sepia</strong>, and <strong>invert</strong> for image effects.</li>
+  <li>Use <strong>mix-blend</strong> and <strong>bg-blend</strong> to control how elements visually blend.</li>
+  <li>All utilities are responsive and customizable through the config file if needed.</li>
+</ul>
+
+<p>
+  These visual effect utilities in Tailwind CSS can dramatically improve the aesthetic and impact of your interface with minimal effort.
+</p>
 
 ## FILTERS AND BACKDROP  
 
