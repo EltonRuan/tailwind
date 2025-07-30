@@ -1776,7 +1776,55 @@ module.exports = {
 
 ## FILTERS AND BACKDROP  
 
+<p>
+  Tailwind CSS offers utility classes for applying <strong>CSS filters</strong> and <strong>backdrop filters</strong>, enabling elegant visual effects such as blurs, brightness changes, and more—both on elements and their backgrounds.
+</p>
 
+<h3>Filters</h3>
+<p>
+  Use the <code>filter</code> utility in combination with other filter-related classes to modify an element's appearance.
+</p>
+
+<ul>
+  <li><code>filter</code> – enables filters on the element</li>
+  <li><code>blur-{size}</code> – applies blur (e.g., <code>blur-sm</code>, <code>blur-lg</code>)</li>
+  <li><code>brightness-{value}</code>, <code>contrast-{value}</code>, <code>saturate-{value}</code> – adjust visual properties</li>
+  <li><code>grayscale</code>, <code>invert</code>, <code>sepia</code>, <code>hue-rotate-{deg}</code> – apply creative effects</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="filter blur-md brightness-110"&gt;
+  Filtered content
+&lt;/div&gt;
+</code></pre>
+
+<h3>Backdrop Filters</h3>
+<p>
+  Backdrop filters affect the background behind an element, creating a glassmorphism-style effect.
+</p>
+
+<ul>
+  <li><code>backdrop-filter</code> – enables backdrop filters</li>
+  <li><code>backdrop-blur-{size}</code> – blurs the background behind (e.g., <code>backdrop-blur-sm</code>)</li>
+  <li><code>backdrop-brightness-{value}</code>, <code>backdrop-contrast-{value}</code>, etc.</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;div class="backdrop-blur-sm backdrop-brightness-125 bg-white/30 p-6 rounded-xl"&gt;
+  Frosted glass effect
+&lt;/div&gt;
+</code></pre>
+
+<h3>Notes</h3>
+<ul>
+  <li>Filters require the <code>filter</code> or <code>backdrop-filter</code> base class to be active.</li>
+  <li>Backdrops work best when combined with transparency (e.g., <code>bg-white/30</code>).</li>
+  <li>All filter utilities are responsive and support hover/focus variants.</li>
+</ul>
+
+<p>
+  Use these utilities to bring modern, elegant UI visuals without writing custom CSS filters.
+</p>
 
 ## TABLES  
 
