@@ -1828,7 +1828,62 @@ module.exports = {
 
 ## TABLES  
 
+<p>
+  Tailwind CSS doesn't provide styled tables by default, but it offers utility classes that give you full control over the look and behavior of tables. You can use these utilities to apply borders, spacing, alignment, and hover effects.
+</p>
 
+<h3>Basic Table Structure</h3>
+
+<pre><code class="language-html">
+&lt;table class="table-auto w-full border border-gray-300"&gt;
+  &lt;thead class="bg-gray-100"&gt;
+    &lt;tr&gt;
+      &lt;th class="px-4 py-2 text-left"&gt;Name&lt;/th&gt;
+      &lt;th class="px-4 py-2 text-left"&gt;Email&lt;/th&gt;
+      &lt;th class="px-4 py-2 text-left"&gt;Role&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr class="hover:bg-gray-50"&gt;
+      &lt;td class="border px-4 py-2"&gt;Alice&lt;/td&gt;
+      &lt;td class="border px-4 py-2"&gt;alice@example.com&lt;/td&gt;
+      &lt;td class="border px-4 py-2"&gt;Admin&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="hover:bg-gray-50"&gt;
+      &lt;td class="border px-4 py-2"&gt;Bob&lt;/td&gt;
+      &lt;td class="border px-4 py-2"&gt;bob@example.com&lt;/td&gt;
+      &lt;td class="border px-4 py-2"&gt;User&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+
+<h3>Useful Utilities</h3>
+<ul>
+  <li><code>table-auto</code> or <code>table-fixed</code> – controls column sizing</li>
+  <li><code>border</code>, <code>border-{color}</code> – adds borders</li>
+  <li><code>text-left</code>, <code>text-center</code>, <code>text-right</code> – text alignment</li>
+  <li><code>hover:bg-{color}</code> – adds hover effects on rows</li>
+  <li><code>bg-{color}</code>, <code>text-{color}</code> – customizes colors</li>
+  <li><code>px-{n}</code>, <code>py-{n}</code> – controls padding</li>
+</ul>
+
+<h3>Responsive Tables</h3>
+<p>
+  To make tables scrollable on smaller screens, wrap them inside a container with <code>overflow-x-auto</code>:
+</p>
+
+<pre><code class="language-html">
+&lt;div class="overflow-x-auto"&gt;
+  &lt;table class="min-w-full"&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>
+  Tailwind gives you the flexibility to design highly customized tables without being restricted by opinionated default styles.
+</p>
 
 ## SPACING UTILITIES  
 
