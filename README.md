@@ -1887,7 +1887,7 @@ module.exports = {
 
 ## SPACING UTILITIES  
 
-
+.
 
 ## COMPONENTIZATION WITH TAILWIND  
 
