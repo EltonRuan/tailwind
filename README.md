@@ -1954,6 +1954,53 @@ module.exports = {
 
 ## COMPONENTIZATION WITH TAILWIND  
 
+<p>
+  Tailwind CSS is a utility-first framework, which means it provides low-level utility classes instead of pre-built components. However, you can easily create reusable UI components by composing these utility classes.
+</p>
+
+<h3>What is Componentization?</h3>
+<p>
+  Componentization refers to breaking down your UI into small, reusable, and maintainable pieces or components. This approach helps keep your code clean, scalable, and easier to manage.
+</p>
+
+<h3>How to Build Components with Tailwind</h3>
+<ul>
+  <li>
+    <strong>Create reusable classes:</strong> Use <code>@apply</code> in your CSS or PostCSS to compose utility classes into semantic component classes.
+  </li>
+  <li>
+    <strong>Extract JSX or HTML components:</strong> If using frameworks like React, Vue, or Angular, build components with Tailwind utility classes embedded in the markup.
+  </li>
+  <li>
+    <strong>Use templates and partials:</strong> For templating engines (like Blade, Twig, etc.), create partials or includes that use Tailwind classes.
+  </li>
+  <li>
+    <strong>Leverage CSS-in-JS:</strong> Combine Tailwind with CSS-in-JS solutions to encapsulate styling and logic.
+  </li>
+</ul>
+
+<h3>Benefits</h3>
+<ul>
+  <li>Consistency in design and behavior</li>
+  <li>Improved maintainability</li>
+  <li>Faster development by reusing components</li>
+  <li>Easier collaboration in teams</li>
+</ul>
+
+<h3>Example Using <code>@apply</code></h3>
+<pre><code>
+.btn {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-primary {
+  @apply bg-indigo-600 hover:bg-indigo-700;
+}
+</code></pre>
+
+<p>
+  This way, you can keep your HTML clean while still leveraging Tailwind’s utility classes in your CSS components.
+</p>
 
 
 ## USING @APPLY  
