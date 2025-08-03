@@ -2004,8 +2004,50 @@ module.exports = {
 
 
 ## USING @APPLY  
+<p>
+  The <code>@apply</code> directive in Tailwind CSS allows you to extract repetitive utility classes into reusable custom CSS classes. This helps reduce code duplication and makes your markup cleaner and easier to maintain.
+</p>
 
+<h3>Why Use <code>@apply</code>?</h3>
+<ul>
+  <li>Improves readability by reducing long class lists</li>
+  <li>Promotes reuse and consistency across your UI</li>
+  <li>Keeps your markup concise and clean</li>
+</ul>
 
+<h3>Basic Example</h3>
+<pre><code>
+.btn {
+  @apply bg-blue-500 text-white font-semibold py-2 px-4 rounded;
+}
+
+.btn:hover {
+  @apply bg-blue-600;
+}
+</code></pre>
+
+<p>
+  In this example, you define a <code>.btn</code> class that combines multiple Tailwind utilities. You can now apply <code>class="btn"</code> in your HTML instead of repeating the full list of utilities.
+</p>
+
+<h3>Where to Use <code>@apply</code></h3>
+<ul>
+  <li>In your global CSS file (e.g., <code>styles.css</code>)</li>
+  <li>Inside component-scoped CSS if you're using frameworks like Vue, React, or Svelte</li>
+  <li>With <code>tailwind.config.js</code> to define custom components and extend themes</li>
+</ul>
+
+<h3>Limitations</h3>
+<p>
+  While <code>@apply</code> is powerful, it has limitations. It can’t always be used with responsive variants or certain pseudo-classes (like <code>:first-child</code>) unless explicitly supported by Tailwind's engine.
+</p>
+
+<h3>Best Practices</h3>
+<ul>
+  <li>Use <code>@apply</code> for repeating utility combinations</li>
+  <li>Avoid overusing it to the point that you recreate traditional CSS</li>
+  <li>Use semantic class names when applying <code>@apply</code> (e.g., <code>.btn</code>, <code>.card</code>)</li>
+</ul>
 
 ## CREATING THEMES  
 
