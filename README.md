@@ -2051,7 +2051,89 @@ module.exports = {
 
 ## CREATING THEMES  
 
-.
+<p>
+  Tailwind CSS allows you to create custom themes by extending its default configuration. This is particularly useful when building applications that support light/dark modes or multiple color schemes.
+</p>
+
+<h3>Why Create a Theme?</h3>
+<ul>
+  <li>To standardize the look and feel of your application</li>
+  <li>To support light/dark or custom color modes</li>
+  <li>To make your design system scalable and consistent</li>
+</ul>
+
+<h3>Using <code>tailwind.config.js</code></h3>
+<p>
+  You can define themes by extending the <code>theme</code> section in your Tailwind configuration:
+</p>
+
+<pre><code>
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          light: '#3AB0FF',
+          DEFAULT: '#0085FF',
+          dark: '#005BB5',
+        },
+      },
+    },
+  },
+};
+</code></pre>
+
+<p>
+  This adds a custom <code>brand</code> color palette that you can use like <code>bg-brand</code>, <code>bg-brand-dark</code>, or <code>text-brand-light</code>.
+</p>
+
+<h3>Creating Dark Mode Themes</h3>
+<p>
+  Tailwind supports dark mode natively. You can toggle dark mode by adding a class or using media queries:
+</p>
+
+<pre><code>
+// Enable dark mode class strategy
+module.exports = {
+  darkMode: 'class',
+}
+</code></pre>
+
+<p>
+  Then apply different styles using the <code>dark:</code> variant:
+</p>
+
+<pre><code>
+<div class="bg-white text-black dark:bg-black dark:text-white">
+  Themed content
+</div>
+</code></pre>
+
+<h3>CSS Variables for Dynamic Themes</h3>
+<p>
+  For more advanced theming, especially dynamic switching, you can combine Tailwind with CSS variables:
+</p>
+
+<pre><code>
+:root {
+  --color-primary: #3AB0FF;
+}
+
+.dark {
+  --color-primary: #005BB5;
+}
+
+.btn {
+  background-color: var(--color-primary);
+}
+</code></pre>
+
+<h3>Best Practices</h3>
+<ul>
+  <li>Keep theme tokens semantic (e.g., <code>primary</code>, <code>accent</code>, <code>neutral</code>)</li>
+  <li>Define themes in your config for maintainability</li>
+  <li>Use <code>dark:</code> and custom CSS variables for flexible control</li>
+</ul>
 
 ## DESIGN SYSTEMS WITH TAILWIND  
 
