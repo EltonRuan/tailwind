@@ -2210,7 +2210,82 @@ module.exports = {
 
 ## USING CSS VARIABLES WITH TAILWIND 
 
+<p>
+  Tailwind CSS fully supports the use of native CSS variables (<code>--var-name</code>), making it easy to integrate dynamic theming and fine-grained design control into your utility-first workflow.
+</p>
 
+<h3>Why Use CSS Variables?</h3>
+<ul>
+  <li>Enable dynamic theming (like switching between light and dark modes)</li>
+  <li>Allow central control over colors, spacing, or other values</li>
+  <li>Improve maintainability and flexibility in large projects</li>
+</ul>
+
+<h3>Defining CSS Variables</h3>
+<p>
+  You can define variables in your global styles, such as inside <code>:root</code> or within specific themes:
+</p>
+
+<pre><code>
+/* styles.css */
+:root {
+  --primary: #4f46e5;
+  --secondary: #f59e0b;
+  --radius: 0.5rem;
+}
+</code></pre>
+
+<h3>Using CSS Variables in Tailwind Classes</h3>
+<p>
+  Tailwind lets you use variables inside utilities that accept custom values via brackets:
+</p>
+
+<pre><code>
+<!-- Background color using a CSS variable -->
+<div class="bg-[var(--primary)] text-white p-4 rounded-[var(--radius)]">
+  This box uses CSS variables!
+</div>
+
+<!-- Text color and custom padding -->
+<p class="text-[var(--secondary)] p-[var(--padding)]">
+  Customizable text with CSS variables.
+</p>
+</code></pre>
+
+<h3>Combining Tailwind and CSS Variables</h3>
+<p>
+  This approach allows you to blend Tailwind’s utility classes with the flexibility of CSS variables, ideal for:
+</p>
+<ul>
+  <li>Multi-theme systems</li>
+  <li>Design tokens stored in CSS</li>
+  <li>Runtime-based value changes (JavaScript-controlled themes)</li>
+</ul>
+
+<h3>Example: Dynamic Theme Switch</h3>
+
+<pre><code>
+/* Light and Dark Theme Variables */
+:root {
+  --bg: #ffffff;
+  --text: #1f2937;
+}
+[data-theme="dark"] {
+  --bg: #1f2937;
+  --text: #f3f4f6;
+}
+</code></pre>
+
+<pre><code>
+<!-- HTML -->
+<body class="bg-[var(--bg)] text-[var(--text)] transition-colors">
+  <p>Hello with dynamic theme!</p>
+</body>
+</code></pre>
+
+<p>
+  You can toggle <code>data-theme</code> with JavaScript to switch between themes dynamically, and Tailwind will reflect the changes thanks to the live nature of CSS variables.
+</p>
 
 ## TAILWIND WITH FRAMEWORKS (REACT, NEXT, ETC.)  
 
