@@ -2561,6 +2561,52 @@ module.exports = {
 
 ## VSCODE PLUGINS FOR TAILWIND  
 
+<p>
+  To improve the development experience when working with Tailwind CSS, Visual Studio Code offers several extensions that provide features like IntelliSense, autocomplete, syntax highlighting, and more.
+</p>
+
+<h3>Tailwind CSS IntelliSense</h3>
+<p>
+  This is the most essential plugin for Tailwind developers. It provides:
+</p>
+<ul>
+  <li>Autocomplete for Tailwind classes</li>
+  <li>Hover previews with complete class documentation</li>
+  <li>Color previews for utility classes</li>
+  <li>Linting and class validation</li>
+</ul>
+<p><strong>Extension name:</strong> Tailwind CSS IntelliSense</p>
+<p><strong>Publisher:</strong> Tailwind Labs</p>
+
+<pre><code>
+Search in Extensions Marketplace: "Tailwind CSS IntelliSense"
+</code></pre>
+
+<h3>Headwind</h3>
+<p>
+  Headwind is a VSCode plugin that automatically sorts your Tailwind classes based on a recommended order, improving readability and consistency.
+</p>
+<p><strong>Features:</strong></p>
+<ul>
+  <li>Automatic sorting of class names on save</li>
+  <li>Custom order configuration supported</li>
+</ul>
+
+<h3>PostCSS Language Support (optional)</h3>
+<p>
+  If you're using Tailwind with PostCSS, this plugin enhances syntax highlighting and support for <code>.pcss</code> files.
+</p>
+
+<h3>Other Useful Plugins</h3>
+<ul>
+  <li><strong>Prettier</strong> – To format your code consistently</li>
+  <li><strong>ESLint</strong> – For catching JavaScript or React-related issues</li>
+  <li><strong>Color Highlight</strong> – For visual color indicators in Tailwind classes</li>
+</ul>
+
+<p>
+  These extensions can significantly speed up your workflow and reduce errors when writing Tailwind CSS classes in HTML, Blade, JSX, or Vue files.
+</p>
 
 
 ## AUTOCOMPLETION AND INTELLISENSE  
