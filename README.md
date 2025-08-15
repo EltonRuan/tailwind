@@ -2719,7 +2719,42 @@ Search in Extensions Marketplace: "Tailwind CSS IntelliSense"
 
 ## HEADLESS UI COMPONENTS  
 
+<p>
+  Headless UI components are unstyled, fully accessible components designed to be used with utility-first CSS frameworks like Tailwind CSS. They provide logic and behavior (like open/close, keyboard navigation, ARIA roles) without enforcing any specific visual style, giving you full control over design.
+</p>
 
+<h3>What Are Headless UI Components?</h3>
+<p>
+  "Headless" means these components come without any predefined styling. You only get the functional JavaScript/HTML structure — perfect for full customization using Tailwind classes.
+</p>
+
+<h3>Examples of Headless UI Components</h3>
+<ul>
+  <li><strong>Dialog (Modal)</strong> – Handles accessibility, focus trap, and backdrop</li>
+  <li><strong>Popover</strong> – For dropdowns or floating panels with full keyboard support</li>
+  <li><strong>Listbox (Select)</strong> – Custom dropdown selects with keyboard navigation</li>
+  <li><strong>Disclosure</strong> – Toggles for things like accordions</li>
+  <li><strong>Switch</strong> – Accessible toggle switches</li>
+  <li><strong>Menu</strong> – Context menus or action dropdowns</li>
+</ul>
+
+<h3>Official Library</h3>
+<p>
+  The most popular implementation is from the creators of Tailwind CSS:<br>
+  <a href="https://headlessui.com/" target="_blank">headlessui.com</a>
+</p>
+
+<h3>Benefits</h3>
+<ul>
+  <li>Fully accessible out-of-the-box (WCAG compliant)</li>
+  <li>Built with Tailwind compatibility in mind</li>
+  <li>Gives developers full control over styling</li>
+  <li>Great for custom-designed UIs without reinventing interactivity logic</li>
+</ul>
+
+<p>
+  If you're building highly customized components but want to save time with accessibility and interaction logic, Headless UI is an ideal solution.
+</p>
 
 ## LANDING PAGES WITH TAILWIND  
 
