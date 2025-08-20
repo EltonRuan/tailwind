@@ -2927,7 +2927,22 @@ Search in Extensions Marketplace: "Tailwind CSS IntelliSense"
 
 ## MOBILE-FIRST DESIGN WITH TAILWIND  
 
+<p>
+  Tailwind CSS is built with a mobile-first philosophy, meaning styles are applied to smaller screens by default and enhanced as the screen size increases. This approach ensures your design is responsive from the start.
+</p>
 
+<h3>What is Mobile-First?</h3>
+<p>
+  Mobile-first means designing for the smallest screens first (like smartphones) and progressively adding styles for larger devices (like tablets and desktops). Tailwind achieves this with responsive prefixes like:
+</p>
+
+<ul>
+  <li><code>sm:</code> – Small screens and up (min-width: 640px)</li>
+  <li><code>md:</code> – Medium screens and up (min-width: 768px)</li>
+  <li><code>lg:</code> – Large screens and up (min-width: 1024px)</li>
+  <li><code>xl:</code> – Extra large screens and up (min-width: 1280px)</li>
+  <li><code>2xl:</code> – 2x extra large and up (min-width: 1536px)</li>
+</ul>
 
 ## GRADIENTS AND TRANSPARENCY  
 
