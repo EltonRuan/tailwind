@@ -3433,6 +3433,18 @@ npm install postcss tailwindcss autoprefixer -D
 
 ## FINAL CONSIDERATIONS
 
+<p>This guide was inspired by the official <a href="https://tailwindcss.com/docs" target="_blank" rel="noopener noreferrer">Tailwind CSS documentation</a>, and aims to summarize its essential concepts, configuration options, and real-world applications in a clear and accessible format.</p>
 
+<p>Whether you're just starting out or have experience with utility-first frameworks, Tailwind CSS can significantly improve your productivity and simplify your styling process.</p>
+
+<p>Keep in mind that becoming proficient with Tailwind takes time and practice. Explore its utilities, adjust the configuration to fit your project, and take advantage of its growing plugin ecosystem to unlock its full potential.</p>
+
+<p>Feel free to combine Tailwind with other frameworks and tools to build responsive, accessible, and high-performance web applications tailored to your needs.</p>
+
+<p>Continue experimenting, learning, and challenging yourself creatively. Tailwind CSS adapts to your workflow, enabling clean, maintainable, and scalable styles with speed and flexibility.</p>
+
+<br><br>
+
+<p><strong>© 2025 EltonRuan. All rights reserved.</strong></p>
 
 <footer align="center"> <img style="width:100%" src="https://capsule-render.vercel.app/api?type=soft&height=20&color=FFFFFF&fontSize=50&fontAlign=50&strokeWidth=0&descAlignY=80&stroke=000000&reversal=false&section=footer"> </footer>
